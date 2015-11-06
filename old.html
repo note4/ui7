@@ -17,11 +17,27 @@
 
   <link href="themes/base.css" rel="stylesheet" />
   <link href="themes/widget.css" rel="stylesheet" />
-  <link href="themes/iconspan.css" rel="stylesheet" />
-  <link href="themes/demo.css" rel="stylesheet" />
 
 <style type="text/css">
-@charset "utf-8"; 
+@charset "utf-8";
+/*PC test font*/
+body{font-family: 'Segoe UI', Arial, 'Microsoft Yahei', Simsun, sans-serif;}
+
+/*重置*/
+ 
+a[href^="http://tongji.baidu.com"]{display: none;}
+/*隐藏百度统计*/ 
+span[id^="cnzz_stat"],a[href^="http://www.cnzz.com/stat"],a[href^="http://quanjing.cnzz.com"]{display: none;}
+/*隐藏站长统计(包含全景统计)*/
+
+/*定义*/
+ a, a:link, a:visited, a:active, a:hover{text-decoration:none;} 
+
+ /*单行溢出通用方案*/
+ .oh1{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+ /*多行溢出 支持android+ios 及chrome和safari*/
+ .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+
 
 /*响应调试*/
 @media only screen and (min-width: 320px){
@@ -35,6 +51,12 @@
 
 </head>
 <body>
+<style>
+/*test page css 当前演示页面布局样式*/
+ body{background: #f5f5f5;}
+ div.testbox{width: 80%; margin: 15px auto 30px;background: #fff;border: 10px solid #fff; box-shadow: 0 2px 15px 2px rgba(0,0,0,0.2);max-width: 320px;} 
+ .ts{text-shadow: 0 2px 0 rgba(255,255,255,0.7);}
+</style>
 
 <header>
   <hgroup class="tc ts">
@@ -42,7 +64,13 @@
     <h4>简易 手机端 预设样式</h4>
   </hgroup>
 </header>
- 
+
+<style>
+ div.qi-nav{background: transparent;}
+ .qi-nav .fno [class^="f"] {
+width: 48%;
+}
+</style>
 
 <div class="testbox qi-nav">
       <div class="fno">
@@ -50,24 +78,6 @@
         <div class="fr"><a target="_blank" href="https://github.com/note4/ui7" class="btn-b fc-w">View on GitHub</a></div>
       </div>
 </div>
-<hr>
-
-<div class="item i2iconspan">
-  <span class="icons arrow"></span>
-  <span class="icons arrowl" style="color: red"></span>
-  <span class="icons arrowt" style="color: green"></span>
-  <span class="icons arrowd"></span>
-  <span class="icons close"></span>
-  <span class="icons close" style="color: red"></span>
-  <span class="icons clock"></span>
-  <span class="icons clock atn" style="color: red"></span>
-  <span class="icons set"></span>
-  <span class="icons set on"></span>
-  <span class="icons searchico"></span>
-  <span class="icons searchico" style="color:green"></span>
-
-</div>
-  <div class="loading2tip"><span class="ico2loading"></span>为你拼命加载中...</div>
 
 <div class="testbox bs-example bs-example-type">
     <table class="table">
@@ -118,7 +128,11 @@
     <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
     <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
   </div>
- 
+<style>
+/*button*/
+#button [class^="btn-"]{margin-bottom: 10px;border-radius: 10px;}
+#button .fno [class^="f"]{width: 48%;}
+</style>
   <div id="button" class="testbox bs-example">
     <h2>按钮</h2>
     <h3>按钮色彩</h3>
@@ -153,10 +167,21 @@
       <li>Eget porttitor lorem</li>
     </ul>
   </div>
-
+<style>
+ ol.pagenav-drop{padding: 10px 10px;}
+ ol.pagenav-drop li{width: 33.33%;float: left;text-align: center;}
+ ol.pagenav-drop span{display: block;height: 35px;margin: 3px;line-height: 35px; color: #fff;border-radius: 3px;}
+ ol.pagenav-drop span strong{font-weight: normal;}
+ ol.pagenav-drop li:nth-child(2) span{position: relative;color: #444;padding-right: 32px;border: 1px solid #d5d5d5;}
+ ol.pagenav-drop li:nth-child(2) span i{position: absolute;right: 0; width: 32px;height: 100%;margin: 0; border-left: 1px solid #d5d5d5;background-position: -320px 900px;}
+ ol.pagenav-drop li:nth-child(2) span i:after{position: absolute;top:16px;right: 10px; content: " "; border:solid 6px;border-color: #b7b7b7 transparent transparent; }
+ ol.pagenav-drop li:nth-child(2) span select{position: absolute;top: 0;display: block;width: 100%;height: 100%;opacity: 0;}
+ ol.pagenav-drop a{display: block; color: inherit;background: #2494f2;border-radius: inherit;border-color:#1883dd;border: 1px solid #1883dd; box-shadow: 0 0 2px #d6d6d6;}
+ ol.pagenav-drop a[href^="javacsript"]{border-color:#b5b5b5;background: #c5c5c5;}
+</style>
   <div class="testbox fno">
-    <ol class="pagenav2drop fno">
-      <li><span><a href="javascript:">上一页</a></span></li>
+    <ol class="pagenav-drop fno">
+      <li><span><a href="javacsript:">上一页</a></span></li>
       <li>
         <span>
           <strong class="fc-r">1</strong>/23<i></i>
@@ -294,9 +319,9 @@
 <style>
 </style>
 <div style="height: 62px;"></div>
-<div class="pf tc bottom2nav">
-  <a href="#" class="db fl bsb"><i></i>商品详情</a>
-  <a href="#" class="db fl bsb"><i></i>转发文章</a>
+<div class="bfa pf tc bottom2nav">
+  <a href="#"><i></i>商品详情</a>
+  <a href="#"><i></i>转发文章</a>
 </div>
 
 <div style="height: 62px;"></div>
@@ -306,7 +331,7 @@
 <div class="pf bottom2tips">
   <i class="pa"></i>
   <p>一款会赚钱的APP<br />10个逛淘宝，9个在用返利神器</p>
-  <a href="#" class="btn pa tc">马上安装</a>
+  <a href="#" class="btn-o pa tc">马上安装</a>
 </div>
 
 

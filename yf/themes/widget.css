@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*全局共用分页*/
+.page2navigator{padding:20px 0;}
+.page2navigator ol{text-align:center;}
+.page2navigator li{display:inline-block;font-size:16px;*vertical-align:text-top;}
+.page2navigator li{*display:inline;}
+.page2navigator li.on{}
+.page2navigator a{display:block;margin:0 4px;padding:0px 10px;height:40px;line-height:40px; color:#444;background:#fff;border: #dfdfdf 1px solid;border-radius: 3px; min-width: 20px;_float: left;position: relative;}
+.page2navigator li.on a, .page2navigator li.on a:hover{color:#fff;text-decoration:none; border: none;background:#327ccb;border: solid 1px transparent;}
+.page2navigator .prev a{padding-left: 28px;}
+.page2navigator .next a{padding-right: 28px;}
+.page2navigator .prev span{left: 16px;}
+.page2navigator .next span{right: 16px;}
+.page2navigator li.no a, .page2navigator li.no a:hover{color: #bfbfbf;border: 1px solid #dfdfdf;cursor:not-allowed;}
+.page2navigator a:hover{text-decoration:none;color:#327cca;border: 1px solid #327cca;}
+.page2navigator li span{ position: absolute; top: 0; font-size: 30px;line-height: 35px; display: inline; height: 40px; font-style: normal;}
+.page2navigator li em.dot{display:block; padding: 10px 10px 0;}

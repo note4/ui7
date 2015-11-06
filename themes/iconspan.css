@@ -1,0 +1,26 @@
+@charset "utf-8";
+ 
+/* ui7 iconspan 绘图*/
+span.icons{display: inline-block;}
+/*arrow*/
+ span[class^="icons arrow"]{ width: 20px; height: 20px; color: #aeaeae; border: solid; border-width: 0 1px 1px 0; -webkit-transform: rotate( 315deg ); transform: rotate( 315deg );}
+ span.icons.arrowl{-webkit-transform: rotate(135deg); transform: rotate(135deg);}
+ span.icons.arrowt{-webkit-transform: rotate(225deg); transform: rotate(225deg);}
+ span.icons.arrowd{-webkit-transform: rotate(225deg); transform: rotate(45deg);}
+/*close*/
+	span.icons.close{position: relative; width: 20px; height: 20px; color: #888; }
+	span.icons.close:before, span.icons.close:after{content: " "; position: absolute; left: 0; right: 0; top: 50%; margin: -1px 0 0; width: 100%; height: 0; border: solid; border-width: 1px 0 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+	span.icons.close:after{-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+/*clock*/
+	span.icons.clock{width: 18px; height: 18px; color: #ccc; border: 1px solid ; border-radius: 18px; }
+	span.icons.clock:after{content: " "; display: block; width: 4px; height: 7px; margin: 3px 0 0 8px; border: solid; border-width: 0 0 1px 1px;}
+/*set*/
+	span.icons.set{ margin: 0 8px -5px 0; position: relative;width: 22px; height: 22px;border-radius: 22px; border: 1px solid #d4d4d4; box-sizing:border-box;  -webkit-box-sizing:border-box; }
+	span.icons.set:before, span.icons.set:after{display: none; content: " "; position: absolute; right: 2px; top: 10px; width: 60%; height: 2px; background: #fff;-webkit-transform: rotate( -45deg ); transform: rotate( -45deg );}
+	span.icons.set:after{top: 12px; right: 12px; width: 28%; -webkit-transform: rotate( 46deg ); transform: rotate( 46deg );}
+ span.icons.set.on{ border: 0; background: red; }
+	span.icons.set.on:before, span.icons.set.on:after{display: block; }
+
+
+ span.searchico{position: relative; margin: 8px 0 0 8px; width: 15px; height: 15px; color: #888; border-radius: 15px; border: 3px solid;}
+ span.searchico:before{position: absolute; right: -6px; bottom: -6px; display: block; content: " "; width: 2px; height: 8px; border-right: 3px solid; -webkit-transform: rotate( 135deg ); transform: rotate( 135deg );}

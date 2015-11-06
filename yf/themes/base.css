@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* yf 1.1 */
+ body{margin: 0; color: #404040; behavior: url("/css/js/hover.htc");}
+ body, input, textarea, select{font-family: Arial, sans-serif; font-size: 16px; }
+ ul, ol{margin: 0;padding-left: 0; list-style: none;}
+ ul li, ol li{vertical-align: middle;}
+ dd{margin-left: 0;}
+ h1, h2, h3, h4, h5, h6{margin-top: 0.6em;margin-bottom: 0.6em;line-height: 1.2em;font-weight: bold;}
+ h1{font-size: 32px;}
+ h2{font-size: 24px;}
+ h3{font-size: 19px;}
+ h4{font-size: 18px;}
+ h5{font-size: 13px;}
+ h6{font-size: 12px;}
+ p{line-height: 1.2em;margin-top: 1em;margin-bottom: 1em;}
+ strong, b{ font-weight: bold; }
+ em, i{font-style: italic;}
+ blockquote, q{quotes: none;} 
+ table{border-collapse: collapse;border-spacing: 0;}
+ input{margin: 0;}
+ input[type="submit"]{cursor:pointer;}
+ input[disabled]{cursor: not-allowed;}
+ input:focus, select:focus, textarea:focus{outline: none;}
+ input:-webkit-autofill{box-shadow:0 0 0 600px #fff inset;}
+ textarea{padding: 0; resize: none;}
+ small{ font-size: 80%; }
+ sub, sup{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } 
+ sup{ top: -0.5em; } 
+ sub{ bottom: -0.25em; }
+ img{ border: 0; }
+ hr{display: block;height: 0; border: 0;border-bottom: 1px solid #ccc;box-sizing: border-box;}
+ a{color: #404040;}
+ a, a:link, a:visited, a:active, a:hover{text-decoration:none;}
+ a:hover{text-decoration: underline;}
+/* yf 1.2 */
+ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block\9;}
+ audio, canvas, progress, video { display: inline-block; vertical-align: baseline;}
+/* yf 2 */
+ .pr{position: relative;} .pf{position: fixed;} .pa{position: absolute;} .ps{position: static;}
+ .db{display: block;} .dib{display: inline-block;} .di{display: inline;}
+ .fa, .container, .page2container{margin: 0 auto;} .fl{float: left;} .fr{float: right;}
+ .fno, .container{zoom: 1; } .fno:after, .container:after{content: "\20"; display: block; height: 0; clear: both; visibility: hidden; }
+ .dno{display: none;} .tl{text-align: left;} .tr{text-align: right;} .tc{text-align: center;} .tno{text-indent: -9999em;}
+ a:hover.tdn, .tdn a:hover{text-decoration: none;}
+ .ffs{font-family: Arial, sans-serif;}
+ .ffh{font-family: 'Microsoft Yahei', Arial, sans-serif;}
+ .oh1{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+ .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+/* yf 3 User module*/
+.bc2w{background: #fff;}
+a.bc2w:hover{background: #fafafa;}
+.bc2g{background: #39ac69;}
+.fc2w, .bc2r, .bc2b, .bc2g, .bc2mb{color: #fff;}
+.fc2w{color: #fff;}
+.bc2t{background: transparent;}
+.op0{filter:alpha(opacity=0); *filter:alpha(opacity=0); opacity: 0;}
