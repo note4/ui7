@@ -7,7 +7,7 @@
  h1, h2, h3, h4, h5, h6{margin: 0; font-weight: normal;}/*考虑到布局形式的不确定性将大部分标签样式重置*/
  strong{ font-weight: bold; } 
  em {font-style: italic;}
- img{border: 0;}
+ img{border: 0; max-width: 100%;}
  a, a:link, a:visited, a:active, a:hover{text-decoration:none;}/*手机上链接无需下划线*/
  a,button,input{-webkit-tap-highlight-color:rgba(0,0,0,0.2);}/* webkit点击20%透明遮罩*/
  select{-webkit-appearance: none; -moz-appearance: none;}
@@ -47,3 +47,6 @@ a[href^="http://tongji.baidu.com"]{display: none;}
 /*隐藏百度统计*/ 
 span[id^="cnzz_stat"],a[href^="http://www.cnzz.com/stat"],a[href^="http://quanjing.cnzz.com"]{display: none;}
 /*隐藏站长统计(包含全景统计)*/
+
+.tsl04 { -webkit-transition: linear .4s; -ms-transition: linear .4s; -moz-transition: linear .4s; transition: linear .4s; }
+/*过滤效果*/
