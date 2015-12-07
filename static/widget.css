@@ -1,22 +1,5 @@
 @charset "utf-8";
 
-
-/* ui7 article content */
-/* #md */
- #md{}
- #md h1, #md h2, #md h3, #md h4, #md h5, #md h6, #md p{line-height: 1.6em;}
- #md h1{font-size: 2em;font-weight: bold;}
- #md h2{font-size: 1.5em;font-weight: bold;}
- #md h3{font-size: 1.17em;font-weight: normal;}
- #md h4{font-size: 1em;font-weight: normal;}
- #md h5{font-size: 0.83em;font-weight: normal;}
- #md h6{font-size: 0.67em;font-weight: normal;}
- #md p{margin: 0 0 10px;}
- #md p img{display: block; max-width: 100%; margin: 0 auto;}
- #md ul{list-style-type: disc;padding-left: 40px;}
- #md ul ul, #md ol ul {list-style-type: circle;}
- #md ol{list-style-type: decimal;padding-left: 40px;}
-
 /* ui7 color*/
 .fc2r{color: rgb(231, 12, 12);}/*red*/
 .fc2o{color: rgb(255, 97, 35);}/*orange*/
