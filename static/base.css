@@ -20,9 +20,9 @@
  .tno{text-indent: -9999em;} .tl{text-align: left;} .tr{text-align: right;} .tc{text-align: center;}
  .fwn{font-weight: normal;} .fsn{font-style: normal;}
 
-
- ul.normal, ol.normal{margin: 0; padding-left: 0; list-style: none;}
- ul.normal li, ol.normal li{vertical-align: middle;}
+/*重置 ul ol*/
+.normal{margin: 0; padding-left: 0; list-style: none;}
+.normal li{vertical-align: middle;}
  dl{margin: 0;} 
  dd{margin-left: 0;}
 
