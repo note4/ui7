@@ -2,14 +2,15 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
+  <!-- 禁用手动缩放 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<!-- 禁用手动缩放 -->
+  <!-- 禁用将数字识别未号码 -->
 	<meta name="format-detection" content="telephone=no">
-	<!-- 禁用将数字识别未号码 -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<!-- 隐藏地址栏 -->
-  <meta http-equiv="Cache-control" content="no-cache" />
   <!-- 禁用浏览器缓存 -->
+  <meta http-equiv="Cache-control" content="no-cache" />
+  <!-- ios定制区域 -->
+  <!-- 隐藏地址栏 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
  
 	<title>ui7</title> 
 	<meta name="Description" content="简易 手机端 预设样式" />
@@ -18,7 +19,8 @@
   <link href="static/base.css" rel="stylesheet" />
   <link href="static/widget.css" rel="stylesheet" />
   <link href="static/iconspan.css" rel="stylesheet" />
-  <link href="static/demo.css" rel="stylesheet" />
+  <link href="demo/style.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="demo/fullPage/javascript.fullPage.css" />
 
 <style type="text/css">
 @charset "utf-8"; 
@@ -27,6 +29,7 @@
 @media only screen and (min-width: 320px){
 /*屏幕宽度大于320px*/
 }
+.article .modifyme{margin: 15%; height: 70%; overflow-y: scroll;}
 </style>
 
 	<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
@@ -36,13 +39,298 @@
 </head>
 <body>
 
+<div id="fullpage">
+  <div class="section article">
+    <div class="modifyme single-page">
+      <h2><a href="/?p=36">Elements</a></h2>
+      <p>
+      </p>
+      <p>
+        The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.
+      </p>
+      <hr>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>
+        <small><a href="#wrapper">[top]</a></small>
+      </p>
+      <hr>
+      <h2 id="paragraph">Paragraph</h2>
+      <p>
+        Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+      </p>
+      <p>
+        <small><a href="#wrapper">[top]</a></small>
+      </p>
+      <hr>
+      <h2 id="list_types">List Types</h2>
+      <h3>Definition List</h3>
+      <dl>
+        <dt>Definition List Title</dt>
+        <dd>This is a definition list division.</dd>
+      </dl>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ol>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+      <p>
+        <small><a href="#wrapper">[top]</a></small>
+      </p>
+      <hr>
+      <h2 id="form_elements">Forms</h2>
+      <fieldset>
+        <legend>Legend</legend>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
+        </p>
+        <form>
+          <h2>Form Element</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.
+          </p>
+          <p>
+            <label for="text_field">Text Field:</label><br>
+            <input type="text" id="text_field">
+          </p>
+          <p>
+            <label for="text_area">Text Area:</label><br>
+            <textarea id="text_area"></textarea>
+          </p>
+          <p>
+            <label for="select_element">Select Element:</label><br>
+            <select name="select_element">
+              <optgroup label="Option Group 1">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </optgroup><optgroup label="Option Group 2">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="radio_buttons">Radio Buttons:</label>
+          </p>
+          <p>
+            <input type="radio" class="radio" name="radio_button" value="radio_1"> Radio 1<br>
+            <input type="radio" class="radio" name="radio_button" value="radio_2"> Radio 2<br>
+            <input type="radio" class="radio" name="radio_button" value="radio_3"> Radio 3
+          </p>
+          <p>
+            <label for="checkboxes">Checkboxes:</label>
+          </p>
+          <p>
+            <input type="checkbox" class="checkbox" name="checkboxes" value="check_1"> Radio 1<br>
+            <input type="checkbox" class="checkbox" name="checkboxes" value="check_2"> Radio 2<br>
+            <input type="checkbox" class="checkbox" name="checkboxes" value="check_3"> Radio 3
+          </p>
+          <p>
+            <label for="password">Password:</label>
+          </p>
+          <p>
+            <input type="password" class="password" name="password">
+          </p>
+          <p>
+            <label for="file">File Input:</label><br>
+            <input type="file" class="file" name="file">
+          </p>
+          <p>
+            <input class="button" type="reset" value="Clear"><input class="button" type="submit" value="Submit">
+          </p>
+          <p>
+          </p>
+        </form>
+      </fieldset>
+      <p>
+        <small><a href="#wrapper">[top]</a></small>
+      </p>
+      <hr>
+      <h2 id="tables">Tables</h2>
+      <table cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+        <th>
+          Table Header 1
+        </th>
+        <th>
+          Table Header 2
+        </th>
+        <th>
+          Table Header 3
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Division 1
+        </td>
+        <td>
+          Division 2
+        </td>
+        <td>
+          Division 3
+        </td>
+      </tr>
+      <tr class="even">
+        <td>
+          Division 1
+        </td>
+        <td>
+          Division 2
+        </td>
+        <td>
+          Division 3
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Division 1
+        </td>
+        <td>
+          Division 2
+        </td>
+        <td>
+          Division 3
+        </td>
+      </tr>
+      </tbody>
+      </table>
+      <p>
+        <small><a href="#wrapper">[top]</a></small>
+      </p>
+      <hr>
+      <h2 id="misc">Misc Stuff – abbr, acronym, pre, code, sub, sup, etc.</h2>
+      <p>
+        Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr title="Avenue">AVE</abbr>
+      </p>
+      <pre>
+        <p>
+      Lorem ipsum dolor sit amet,
+       consectetuer adipiscing elit.
+       Nullam dignissim convallis est.
+       Quisque aliquam. Donec faucibus. 
+      Nunc iaculis suscipit dui. 
+      Nam sit amet sem. 
+      Aliquam libero nisi, imperdiet at,
+       tincidunt nec, gravida vehicula,
+       nisl. 
+      Praesent mattis, massa quis 
+      luctus fermentum, turpis mi 
+      volutpat justo, eu volutpat 
+      enim diam eget metus. 
+      Maecenas ornare tortor. 
+      Donec sed tellus eget sapien
+       fringilla nonummy. 
+          <acronym title="National Basketball Association">NBA</acronym> 
+      Mauris a ante. Suspendisse
+       quam sem, consequat at, 
+      commodo vitae, feugiat in, 
+      nunc. Morbi imperdiet augue
+       quis tellus.  
+          <abbr title="Avenue">AVE</abbr>
+        </p>
+      </pre>
+      <blockquote>
+        <p>
+          “This stylesheet is going to help so freaking much.”<br>
+          -Blockquote
+        </p>
+      </blockquote>
+      <p>
+        <small><a href="#wrapper">[top]</a></small><br>
+      </p>
+      <div class="post-meta">
+        <div class="tags">
+        </div>
+        <hr class="before_content">
+        <span class="screen-reader hidden">Published on:</span><span class="post-meta-date"><a href="/?p=36">September 5, 2008</a></span><span class="screen-reader hidden">Category:</span><span class="post-meta-category"><a href="/?cat=1">Uncategorized</a></span>
+      </div>
+      <span class="post-navigation previous-post"><a href="/?p=14" rel="prev">«<span class="screen-reader-text">More Tags</span></a></span><span class="post-navigation next-post"><a href="/?p=19" rel="next">»<span class="screen-reader-text">Worth A Thousand Words</span></a></span>
+    </div>
+  </div>
+  <!-- end.section -->
+  <div class="section">
+    .
+  </div>
+  <!-- end.section -->
+  <div class="section">
+    .
+  </div>
+  <!-- end.section -->
+  <div class="section">
+    .
+  </div>
+  <!-- end.section -->
+  <div class="section">
+    .
+  </div>
+  <!-- end.section -->
+  <div class="section">
+    .
+  </div>
+  <!-- end.section -->
+</div>
+<!-- end#fullpage -->
+
+<div class="boxitem">
+</div>
+<!-- end.boxitem -->
+
+
+
 <header>
   <hgroup class="tc ts">
     <h1>ui7</h1>
     <h4>简易 手机端 预设样式</h4>
   </hgroup>
 </header>
- 
+
+<script type="text/javascript" src="demo/fullPage/javascript.fullPage.min.js"></script>
+<script type="text/javascript">
+  fullpage.initialize('#fullpage', {
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    menu: '#menu',
+    css3:true
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="testbox qi-nav">
       <div class="fno">
