@@ -6,7 +6,7 @@ span.icons{display: inline-block;}
  span[class^="icons arrow"]{ width: 20px; height: 20px; color: #aeaeae; border: solid; border-width: 0 1px 1px 0; -webkit-transform: rotate( 315deg ); transform: rotate( 315deg );}
  span.icons.arrowl{-webkit-transform: rotate(135deg); transform: rotate(135deg);}
  span.icons.arrowt{-webkit-transform: rotate(225deg); transform: rotate(225deg);}
- span.icons.arrowd{-webkit-transform: rotate(225deg); transform: rotate(45deg);}
+ span.icons.arrowd{-webkit-transform: rotate(45deg); transform: rotate(45deg);}
 /*close*/
 	span.icons.close{position: relative; width: 20px; height: 20px; color: #888; }
 	span.icons.close:before, span.icons.close:after{content: " "; position: absolute; left: 0; right: 0; top: 50%; margin: -1px 0 0; width: 100%; height: 0; border: solid; border-width: 1px 0 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
