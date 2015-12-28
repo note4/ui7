@@ -1,5 +1,5 @@
 @charset "utf-8";
- 
+
 /* ui7 iconspan 绘图*/
 span.icons{display: inline-block;}
 /*arrow*/
@@ -9,8 +9,11 @@ span.icons{display: inline-block;}
  span.icons.arrowd{-webkit-transform: rotate(45deg); transform: rotate(45deg);}
 /*close*/
 	span.icons.close{position: relative; width: 20px; height: 20px; color: #888; }
-	span.icons.close:before, span.icons.close:after{content: " "; position: absolute; left: 0; right: 0; top: 50%; margin: -1px 0 0; width: 100%; height: 0; border: solid; border-width: 1px 0 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
+	span.icons.close:before, span.icons.close:after, span.icons.add:before, span.icons.add:after{content: " "; position: absolute; left: 0; right: 0; top: 50%; margin: -1px 0 0; width: 100%; height: 0; border: solid; border-width: 1px 0 0 0; -webkit-transform: rotate(45deg); transform: rotate(45deg);}
 	span.icons.close:after{-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+	span.icons.add{position: relative; width: 20px; height: 20px; color: #888; }
+	span.icons.add:before{-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	span.icons.add:after{-webkit-transform: rotate(90deg); transform: rotate(90deg);}
 /*clock*/
 	span.icons.clock{width: 18px; height: 18px; color: #ccc; border: 1px solid ; border-radius: 18px; }
 	span.icons.clock:after{content: " "; display: block; width: 4px; height: 7px; margin: 3px 0 0 8px; border: solid; border-width: 0 0 1px 1px;}
