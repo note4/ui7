@@ -1,0 +1,52 @@
+@charset "utf-8";
+ /*内容超出隐藏并添加省略号*/
+ /*单行溢出通用方案*/
+ .oh1{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+ /*多行溢出 支持android+ios 及chrome和safari*/
+ .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+
+/*伸缩布局 css3*/
+ .box{display: -webkit-box; display: -moz-box; display:box; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; box-orient: horizontal;}
+ .box .box-flex{-webkit-box-flex: 1.0; -moz-box-flex: 1; box-flex: 1;display: block;}
+
+
+ .xlist, .ylist{list-style: none;padding-left: 0;*margin-left: 0;}
+ .xlist{}
+ .xlist li{float: left;}
+ .xlist li a{display: inline-block;text-decoration: none;}
+ .xlist li.line {color:#ccc;padding: 0px;}
+
+ .ylist{}
+ .ylist li{}
+ .ylist li a{text-decoration: none;}
+ .ylist li.line {background: #ccc;height: 1px; padding: 0px;text-indent: -9999em;}
+
+/*menu*/
+ .menu {}
+ .menu ul {}
+ .menu ul li {float: left;}
+ .menu ul li a {float: left; height: 50px; display: block; text-align: center; width: 100px; line-height: 50px; background-color: #F0F0F0; color: #000; text-decoration: none;}
+ .menu ul li a:hover { color: #FFF; background-color: #333;}
+
+/*search*/
+ .search{position: relative; padding: 4px 104px 4px 4px;background: #ccc;}
+ .search input{border: 0;}
+ .search .text{padding: 10px 0; width: 100%;height: 16px;line-height: 16px;text-indent: 4px;}
+ .search .submit{position: absolute;top:4px;*top:5px; right: 4px; width: 100px; height: 36px;line-height: 36px;text-align: center;}
+
+/*全局共用分页*/
+.page2navigator{padding:20px 0;}
+.page2navigator ol{text-align:center;}
+.page2navigator li{display:inline-block;font-size:16px;*vertical-align:text-top;}
+.page2navigator li{*display:inline;}
+.page2navigator li.on{}
+.page2navigator a{display:block;margin:0 4px;padding:0px 10px;height:40px;line-height:40px; color:#444;background:#fff;border: #dfdfdf 1px solid;border-radius: 3px; min-width: 20px;_float: left;position: relative;}
+.page2navigator li.on a, .page2navigator li.on a:hover{color:#fff;text-decoration:none; border: none;background:#327ccb;border: solid 1px transparent;}
+.page2navigator .prev a{padding-left: 28px;}
+.page2navigator .next a{padding-right: 28px;}
+.page2navigator .prev span{left: 16px;}
+.page2navigator .next span{right: 16px;}
+.page2navigator li.no a, .page2navigator li.no a:hover{color: #bfbfbf;border: 1px solid #dfdfdf;cursor:not-allowed;}
+.page2navigator a:hover{text-decoration:none;color:#327cca;border: 1px solid #327cca;}
+.page2navigator li span{ position: absolute; top: 0; font-size: 30px;line-height: 35px; display: inline; height: 40px; font-style: normal;}
+.page2navigator li em.dot{display:block; padding: 10px 10px 0;}
