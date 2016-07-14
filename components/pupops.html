@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<style>
+.popups{position: fixed; left: 0; right: 0; bottom: 0; top: -999999999999em; overflow: hidden;}
+.popups.on{position: fixed; left: 0; right: 0; bottom: 0; top: 0;}
+.popups.on .bg{position: absolute; left: 0; right: 0; bottom: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.7);}
+.popups.on .box{position: absolute; top:20%; left: 50%; margin-left: -140px; width: 280px; background: #fff; border-radius: 15px;}
+.popups.on .title{text-align: center; border-bottom: 1px solid #eee; line-height: 2.2em;}
+.popups.on .content{padding: 15px 15px 10px; font-size: .875rem;}
+.popups.on .content .ipt-text{border-radius: 3px; border: 1px solid #ccc; padding:  0 10px;}
+.popups.on .content .ipt-text input{padding: 10px 0; width: 100%;}
+.popups.on .btn{padding: 10px; overflow: hidden;}
+.popups.on .btn li{ width: 50%; float: left; text-align: center;}
+.popups.on .btn li a{margin: 0 5px; line-height: 42px; display: block; border-radius: 10px;}
+.popups.on .btn li.length{width: 100%;}
+.popups.on .btn li a.no{background-color: #e6e6e6; color: #999;}
+.popups.on .btn li a.on{background-color: #ff5878; color: #fff;}
+
+</style>
+</head>
+<body>
+
+
+<div class="popups on">
+  <div class="bg"></div>
+  <div class="box">
+    <h3 class="title">确认推荐人</h3>
+    <div class="content">
+      <p>推荐人：泰迪熊</p>
+      <p>ID：2341</p>
+    </div>
+    <ul class="btn">
+      <li><a href="javascript:void(0);" class="no">我要修改</a></li>
+      <li><a href="javascript:void(0);" class="on">就是TA</a></li>
+    </ul>
+    <a href="#" class="close"></a>
+  </div>
+  <div class="box" style="top:400px">
+    <h3 class="title">修改推荐人</h3>
+    <div class="content">
+      <p>推荐人ID:</p>
+      <div class="ipt-text"><input type="text" value="" placeholder="推荐人只能修改一次哦"></div>
+    </div>
+    <ul class="btn">
+      <li class="length"><a class="on">确认修改</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+s
