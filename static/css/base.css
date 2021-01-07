@@ -46,8 +46,13 @@
 
 /* ui7 辅助类 try */
 /* margin-bottom height + font-size 计算出空白块的高度 */
+/* 计算结果 最小 10 最大 150 */
 /* 静态 rem 推荐值 20px  0.6rem=12px */
 .mbh1{height: 1em;}
+.mbh2{height: 2em;}
+.mbh3{height: 3em;}
+.mbh4{height: 4em;}
+.mbh5{height: 5em;}
 .fs05{font-size: 0.5rem;}
 .fs06{font-size: 0.6rem;}
 .fs07{font-size: 0.7rem;}
@@ -56,6 +61,7 @@
 .fs10{font-size: 1rem;}
 .fs13{font-size: 1.3rem;}
 .fs14{font-size: 1.4rem;}
+.fs15{font-size: 1.5rem;}
 /* ui7 扩展处理 */
 /*隐藏百度统计*/
 a[href^="http://tongji.baidu.com"]{display: none;}
