@@ -44,6 +44,18 @@
 .tno{text-indent: -9999em;} .tl{text-align: left;} .tr{text-align: right;} .tc{text-align: center;}
 .fwn{font-weight: normal;} .fsn{font-style: normal;}
 
+/* ui7 辅助类 try */
+/* margin-bottom height + font-size 计算出空白块的高度 */
+/* 静态 rem 推荐值 20px  0.6rem=12px */
+.mbh1{height: 1em;}
+.fs05{font-size: 0.5rem;}
+.fs06{font-size: 0.6rem;}
+.fs07{font-size: 0.7rem;}
+.fs08{font-size: 0.8rem;}
+.fs09{font-size: 0.9rem;}
+.fs10{font-size: 1rem;}
+.fs13{font-size: 1.3rem;}
+.fs14{font-size: 1.4rem;}
 /* ui7 扩展处理 */
 /*隐藏百度统计*/
 a[href^="http://tongji.baidu.com"]{display: none;}
