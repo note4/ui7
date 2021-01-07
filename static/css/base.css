@@ -13,28 +13,11 @@
  input:focus, select:focus, textarea:focus, button:focus{outline: none;}
  input, textarea{padding: 0;border-radius: 0;resize: none;}/*iphone6 border-radius*/
 
-/* ui7 */
- .fa{margin: 0 auto;} .fl{float: left;} .fr{float: right;} .fno{zoom: 1; } .fno:after{content: "\20"; display: block; height: 0; clear: both; visibility: hidden; }
- .pf{position: fixed;} .pr{position: relative;} .pa{position: absolute;}
- .db{display: block;} .dib{display: inline-block;} .di{display: inline;} .dno{display: none;}
- .bsb{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
- .tno{text-indent: -9999em;} .tl{text-align: left;} .tr{text-align: right;} .tc{text-align: center;}
- .fwn{font-weight: normal;} .fsn{font-style: normal;}
-
 /*重置 ul ol*/
 .normal{margin: 0; padding-left: 0; list-style: none;}
 .normal li{vertical-align: middle;}
  dl{margin: 0;}
  dd{margin-left: 0;}
-
-/*ui7常用垂直*/
-/*单行溢出通用方案*/
- .oh1{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
-/*多行溢出 支持android+ios 及chrome和safari*/
- .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
-
-/* ui7 css sprite*/
- .ico{display: inline-block; font-style: normal; background-image: url(../images/ico.png); background-size:640px auto; }
 
 /* ui7 非常用标签 */
  blockquote, q {quotes: none;}
@@ -43,6 +26,23 @@
  hr {display: block; margin: 2em 0; height: 0; border: 0;border-top: 1px solid #ccc;box-sizing: border-box;}
  small, .f-small{ font-size: 80%; }
  sub, sup{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } sup{ top: -0.5em; } sub{ bottom: -0.25em; }
+
+/*ui7常用垂直*/
+/*单行溢出通用方案*/
+.oh1{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+/*多行溢出 支持android+ios 及chrome和safari*/
+ .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+
+/* ui7 css sprite*/
+ .ico{display: inline-block; font-style: normal; background-image: url(../images/ico.png); background-size:640px auto; }
+
+/* ui7 */
+.fa{margin: 0 auto;} .fl{float: left;} .fr{float: right;} .fno{zoom: 1; } .fno:after{content: "\20"; display: block; height: 0; clear: both; visibility: hidden; }
+.pf{position: fixed;} .pr{position: relative;} .pa{position: absolute;}
+.db{display: block;} .dib{display: inline-block;} .di{display: inline;} .dno{display: none;}
+.bsb{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.tno{text-indent: -9999em;} .tl{text-align: left;} .tr{text-align: right;} .tc{text-align: center;}
+.fwn{font-weight: normal;} .fsn{font-style: normal;}
 
 /* ui7 扩展处理 */
 /*隐藏百度统计*/
