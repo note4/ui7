@@ -33,9 +33,6 @@
 /*多行溢出 支持android+ios 及chrome和safari*/
  .oh2{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
 
-/* ui7 css sprite*/
- .ico{display: inline-block; font-style: normal; background-image: url(../images/ico.png); background-size:640px auto; }
-
 /* ui7 */
 .fa{margin: 0 auto;} .fl{float: left;} .fr{float: right;} .fno{zoom: 1; } .fno:after{content: "\20"; display: block; height: 0; clear: both; visibility: hidden; }
 .pf{position: fixed;} .pr{position: relative;} .pa{position: absolute;}
@@ -62,11 +59,28 @@
 .fs13{font-size: 1.3rem;}
 .fs14{font-size: 1.4rem;}
 .fs15{font-size: 1.5rem;}
+
+html{font-size: 20px;}
+@media only screen and (min-width: 414px){
+    body.m-view{margin: 0 auto; max-width: 414px;}
+    /* 手机专用页面，电脑端优化 */
+}
+@media only screen and (max-width: 375px){
+    html{font-size: 18px;}
+    /* iphone 6/7/8 适配优化 375 宽 */
+}
+@media only screen and (max-width: 320px){
+    html{font-size: 16px;}
+    /* iPhone 5 适配优化 320 宽 */
+}
+
 /* ui7 扩展处理 */
+/* ui7 css sprite*/
+.ico{display: inline-block; font-style: normal; background-image: url(../images/ico.png); background-size:640px auto; }
+/* ui7 属性过滤效果*/
+.tsl04 { -webkit-transition: linear .4s; -ms-transition: linear .4s; -moz-transition: linear .4s; transition: linear .4s; }
+
 /*隐藏百度统计*/
 a[href^="http://tongji.baidu.com"]{display: none;}
 /*隐藏站长统计(包含全景统计)*/
 span[id^="cnzz_stat"],a[href^="http://www.cnzz.com/stat"],a[href^="http://quanjing.cnzz.com"]{display: none;}
-
-/* ui7 属性过滤效果*/
-.tsl04 { -webkit-transition: linear .4s; -ms-transition: linear .4s; -moz-transition: linear .4s; transition: linear .4s; }
