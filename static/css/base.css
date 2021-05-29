@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* ui7 1.1 */
- body{margin: 0; line-height: 1.58; color: #333; font-family: sans-serif;}
+ body{margin: 0; line-height: 1.58; color: #333; font-family: Google Sans,Roboto,Helvetica Neue,Arial,sans-serif;}
  strong{ font-weight: bold; }
  em {font-style: italic;}
  img{border: 0; max-width: 100%;}
