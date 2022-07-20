@@ -62,3 +62,9 @@
  .bottom2tips i{left: 10px; display: block; width: 42px;height: 42px;background: url(http://pp.myapp.com/ma_icon/0/icon_10910_19524674_1415877364/96) no-repeat 0 0;background-size: 42px auto;}
  .bottom2tips .btn{top:50%; right: 8px; width: 66px; height: 28px; line-height: 28px; margin: -14px 0 0; color: #fff; background: #ff6123;}
  .bottom2tips p{line-height: 18px;}
+
+/*隐藏百度统计*/
+a[href^="http://tongji.baidu.com"]{display: none;}
+/*隐藏站长统计(包含全景统计)*/
+span[id^="cnzz_stat"],a[href^="http://www.cnzz.com/stat"],a[href^="http://quanjing.cnzz.com"]{display: none;}
+

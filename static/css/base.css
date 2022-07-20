@@ -60,6 +60,22 @@
 .fs14{font-size: 1.4rem;}
 .fs15{font-size: 1.5rem;}
 
+/* 基本配色 */
+.black {color: #000}
+.white{color: white;}
+.blue{color:#357edd;}
+.green{color: #19a974;}
+.pink{color:#ff41b4;}
+.purple{color:#5e2ca5;}
+.red{color:#e7040f;}
+.bg-black {background-color: #000}
+.bg-white{background-color: white;}
+.bg-blue{background-color:#357edd;}
+.bg-green{background-color: #19a974;}
+.bg-pink{background-color:#ff41b4;}
+.bg-purple{background-color:#5e2ca5;}
+.bg-red{background-color:#e7040f;}
+
 html{font-size: 20px;}
 @media only screen and (min-width: 414px){
     body.m-view{margin: 0 auto; max-width: 414px;}
@@ -79,8 +95,3 @@ html{font-size: 20px;}
 .ico{display: inline-block; font-style: normal; background-image: url(../images/ico.png); background-size:640px auto; }
 /* ui7 属性过滤效果*/
 .tsl04 { -webkit-transition: linear .4s; -ms-transition: linear .4s; -moz-transition: linear .4s; transition: linear .4s; }
-
-/*隐藏百度统计*/
-a[href^="http://tongji.baidu.com"]{display: none;}
-/*隐藏站长统计(包含全景统计)*/
-span[id^="cnzz_stat"],a[href^="http://www.cnzz.com/stat"],a[href^="http://quanjing.cnzz.com"]{display: none;}
