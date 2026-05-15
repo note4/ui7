@@ -24,7 +24,6 @@ body{font-size: 1.125rem; background-color: #eee;}
 .content .mate{margin: .5em 0 1em; font-size: .735rem; overflow-y: hidden;}
 .content .mate li{float: left;margin-right: 10px; color: #999;}
 .content p{margin: .68em 0;}
-.content{}
 .module{margin: 8px; padding: 15px 15px 20px; background-color: #fff;}
 .module .title{margin-bottom: .5em; padding-bottom: .5em; border-bottom: 1px solid #eee; font-size: 1rem;}
 .module .title .more{float: right; padding: 0 10px; background-color: #f4f4f4; color: #444; border-radius: 3px;}
